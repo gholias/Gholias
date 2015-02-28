@@ -27,8 +27,6 @@
 		213EC4301A9E440600A972A6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC42F1A9E440600A972A6 /* LoadingView.swift */; };
 		213EC4321A9E444A00A972A6 /* Loading.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213EC4311A9E444A00A972A6 /* Loading.xcassets */; };
 		217455541A97E38C00A538F0 /* Gholias.h in Headers */ = {isa = PBXBuildFile; fileRef = 217455531A97E38C00A538F0 /* Gholias.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2174555A1A97E38C00A538F0 /* Gholias.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2174554E1A97E38C00A538F0 /* Gholias.framework */; };
-		217455611A97E38C00A538F0 /* GholiasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217455601A97E38C00A538F0 /* GholiasTests.swift */; };
 		2174556B1A97E3DE00A538F0 /* NumbersExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2174556A1A97E3DE00A538F0 /* NumbersExtension.swift */; };
 		217455BE1A98AC0A00A538F0 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217455B61A98AC0A00A538F0 /* NSDateExtension.swift */; };
 		217455BF1A98AC0A00A538F0 /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217455B71A98AC0A00A538F0 /* UITextFieldExtensions.swift */; };
@@ -41,17 +39,8 @@
 		217455C81A98AC6200A538F0 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217455C61A98AC6200A538F0 /* StringExtensions.swift */; };
 		217455C91A98AC6200A538F0 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217455C71A98AC6200A538F0 /* UIImageExtensions.swift */; };
 		217455CE1A98B1AE00A538F0 /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217455CD1A98B1AE00A538F0 /* XCGLogger.swift */; };
+		21857C001AA13E7000C186D0 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21857BFF1AA13E7000C186D0 /* BaseWebViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2174555B1A97E38C00A538F0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 217455451A97E38C00A538F0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2174554D1A97E38C00A538F0;
-			remoteInfo = Gholias;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		213EC3EE1A98B53F00A972A6 /* PPSwiftGifs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPSwiftGifs.swift; sourceTree = "<group>"; };
@@ -76,9 +65,6 @@
 		2174554E1A97E38C00A538F0 /* Gholias.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gholias.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		217455521A97E38C00A538F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		217455531A97E38C00A538F0 /* Gholias.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gholias.h; sourceTree = "<group>"; };
-		217455591A97E38C00A538F0 /* GholiasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GholiasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2174555F1A97E38C00A538F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		217455601A97E38C00A538F0 /* GholiasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GholiasTests.swift; sourceTree = "<group>"; };
 		2174556A1A97E3DE00A538F0 /* NumbersExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbersExtension.swift; sourceTree = "<group>"; };
 		217455B61A98AC0A00A538F0 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
 		217455B71A98AC0A00A538F0 /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
@@ -91,6 +77,7 @@
 		217455C61A98AC6200A538F0 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		217455C71A98AC6200A538F0 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		217455CD1A98B1AE00A538F0 /* XCGLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCGLogger.swift; sourceTree = "<group>"; };
+		21857BFF1AA13E7000C186D0 /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,14 +86,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				213EC3F41A98B5AD00A972A6 /* ImageIO.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		217455561A97E38C00A538F0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2174555A1A97E38C00A538F0 /* Gholias.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				213EC4121A9903E900A972A6 /* BaseViewController.swift */,
+				21857BFF1AA13E7000C186D0 /* BaseWebViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -205,7 +185,6 @@
 			children = (
 				213EC3F31A98B5AD00A972A6 /* ImageIO.framework */,
 				217455501A97E38C00A538F0 /* Gholias */,
-				2174555D1A97E38C00A538F0 /* GholiasTests */,
 				2174554F1A97E38C00A538F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -214,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				2174554E1A97E38C00A538F0 /* Gholias.framework */,
-				217455591A97E38C00A538F0 /* GholiasTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,23 +217,6 @@
 			isa = PBXGroup;
 			children = (
 				217455521A97E38C00A538F0 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2174555D1A97E38C00A538F0 /* GholiasTests */ = {
-			isa = PBXGroup;
-			children = (
-				217455601A97E38C00A538F0 /* GholiasTests.swift */,
-				2174555E1A97E38C00A538F0 /* Supporting Files */,
-			);
-			path = GholiasTests;
-			sourceTree = "<group>";
-		};
-		2174555E1A97E38C00A538F0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2174555F1A97E38C00A538F0 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -332,24 +293,6 @@
 			productReference = 2174554E1A97E38C00A538F0 /* Gholias.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		217455581A97E38C00A538F0 /* GholiasTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 217455671A97E38C00A538F0 /* Build configuration list for PBXNativeTarget "GholiasTests" */;
-			buildPhases = (
-				217455551A97E38C00A538F0 /* Sources */,
-				217455561A97E38C00A538F0 /* Frameworks */,
-				217455571A97E38C00A538F0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2174555C1A97E38C00A538F0 /* PBXTargetDependency */,
-			);
-			name = GholiasTests;
-			productName = GholiasTests;
-			productReference = 217455591A97E38C00A538F0 /* GholiasTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -360,9 +303,6 @@
 				ORGANIZATIONNAME = "Felipe Oliveira";
 				TargetAttributes = {
 					2174554D1A97E38C00A538F0 = {
-						CreatedOnToolsVersion = 6.1.1;
-					};
-					217455581A97E38C00A538F0 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
@@ -380,7 +320,6 @@
 			projectRoot = "";
 			targets = (
 				2174554D1A97E38C00A538F0 /* Gholias */,
-				217455581A97E38C00A538F0 /* GholiasTests */,
 			);
 		};
 /* End PBXProject section */
@@ -392,13 +331,6 @@
 			files = (
 				213EC4321A9E444A00A972A6 /* Loading.xcassets in Resources */,
 				213EC41B1A99478E00A972A6 /* AppSettingsDefault.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		217455571A97E38C00A538F0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +361,7 @@
 				213EC4091A98FD2800A972A6 /* DispatchQueue.swift in Sources */,
 				217455C51A98AC0A00A538F0 /* UIButtonExtensions.swift in Sources */,
 				217455CE1A98B1AE00A538F0 /* XCGLogger.swift in Sources */,
+				21857C001AA13E7000C186D0 /* BaseWebViewController.swift in Sources */,
 				213EC4081A98FD2800A972A6 /* DispatchGroup.swift in Sources */,
 				213EC40A1A98FD2800A972A6 /* DispatchTimer.swift in Sources */,
 				213EC40D1A98FE7700A972A6 /* Async.swift in Sources */,
@@ -440,23 +373,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		217455551A97E38C00A538F0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				217455611A97E38C00A538F0 /* GholiasTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2174555C1A97E38C00A538F0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2174554D1A97E38C00A538F0 /* Gholias */;
-			targetProxy = 2174555B1A97E38C00A538F0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		217455621A97E38C00A538F0 /* Debug */ = {
@@ -577,36 +494,6 @@
 			};
 			name = Release;
 		};
-		217455681A97E38C00A538F0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GholiasTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		217455691A97E38C00A538F0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GholiasTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -624,15 +511,6 @@
 			buildConfigurations = (
 				217455651A97E38C00A538F0 /* Debug */,
 				217455661A97E38C00A538F0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		217455671A97E38C00A538F0 /* Build configuration list for PBXNativeTarget "GholiasTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				217455681A97E38C00A538F0 /* Debug */,
-				217455691A97E38C00A538F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -55,6 +55,16 @@ public class LoadingView: UIView {
         
         self.loadingImage!.animationImages = imagesArray
         self.loadingImage!.animationDuration = 2.0
+        
+    }
+    
+    public func hide() {
+        self.hidden = true
+        self.loadingImage!.stopAnimating()
+    }
+    
+    public func show() {
+        self.hidden = false
         self.loadingImage!.startAnimating()
     }
 }
