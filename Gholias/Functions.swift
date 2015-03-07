@@ -37,7 +37,7 @@ func addDashedBorderWithColor(color: UIColor, frame:CGRect) -> CAShapeLayer {
     return shapeLayer
 }
 
-func addDashedLineWithColor(color: UIColor, frame:CGRect, lineWidth: CGFloat) -> CAShapeLayer {
+public func addDashedLineWithColor(color: UIColor, frame:CGRect, lineWidth: CGFloat) -> CAShapeLayer {
     let shapeLayer:CAShapeLayer = CAShapeLayer()
     let shapeRect = CGRectMake(0.0, 0.0, frame.size.width, frame.size.height)
     shapeLayer.bounds = shapeRect
@@ -59,5 +59,31 @@ func addDashedLineWithColor(color: UIColor, frame:CGRect, lineWidth: CGFloat) ->
     shapeLayer.path = path
     
     return shapeLayer
+}
+
+//MARK: - ios version
+public func SYSTEM_VERSION_EQUAL_TO(version: NSString) -> Bool {
+    return UIDevice.currentDevice().systemVersion.compare(version,
+        options: NSStringCompareOptions.NumericSearch) == NSComparisonResult.OrderedSame
+}
+
+public func SYSTEM_VERSION_GREATER_THAN(version: NSString) -> Bool {
+    return UIDevice.currentDevice().systemVersion.compare(version,
+        options: NSStringCompareOptions.NumericSearch) == NSComparisonResult.OrderedDescending
+}
+
+public func SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(version: NSString) -> Bool {
+    return UIDevice.currentDevice().systemVersion.compare(version,
+        options: NSStringCompareOptions.NumericSearch) != NSComparisonResult.OrderedAscending
+}
+
+public func SYSTEM_VERSION_LESS_THAN(version: NSString) -> Bool {
+    return UIDevice.currentDevice().systemVersion.compare(version,
+        options: NSStringCompareOptions.NumericSearch) == NSComparisonResult.OrderedAscending
+}
+
+public func SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(version: NSString) -> Bool {
+    return UIDevice.currentDevice().systemVersion.compare(version,
+        options: NSStringCompareOptions.NumericSearch) != NSComparisonResult.OrderedDescending
 }
 
