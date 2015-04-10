@@ -25,13 +25,13 @@ public extension String {
     func isValidEmail() -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
         
-        var emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)!
+        var emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         let result = emailTest.evaluateWithObject(self)
         return result
     }
     
     subscript (i: Int) -> String {
-        if countElements(self) > i {
+        if count(self) > i {
             return String(Array(self)[i])
         }
         return ""

@@ -9,16 +9,7 @@
 import Foundation
 
 
-public let log = XCGLogger.defaultInstance()
-public func setupXCGLogger(logLevel: XCGLogger.LogLevel) {
-    let urls = NSFileManager.defaultManager().URLsForDirectory(.CachesDirectory, inDomains: .UserDomainMask)
-    var cacheDirectory:NSURL = urls[urls.endIndex-1] as NSURL
-    
-    // Setup XCGLogger
-    let logPath : NSURL = cacheDirectory.URLByAppendingPathComponent("XCGLogger_Log.txt")
-    log.setup(logLevel: logLevel, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: logPath)
 
-}
 
 func addDashedBorderWithColor(color: UIColor, frame:CGRect) -> CAShapeLayer {
     let shapeLayer:CAShapeLayer = CAShapeLayer()
@@ -63,27 +54,27 @@ public func addDashedLineWithColor(color: UIColor, frame:CGRect, lineWidth: CGFl
 
 //MARK: - ios version
 public func SYSTEM_VERSION_EQUAL_TO(version: NSString) -> Bool {
-    return UIDevice.currentDevice().systemVersion.compare(version,
+    return UIDevice.currentDevice().systemVersion.compare(version as String,
         options: NSStringCompareOptions.NumericSearch) == NSComparisonResult.OrderedSame
 }
 
 public func SYSTEM_VERSION_GREATER_THAN(version: NSString) -> Bool {
-    return UIDevice.currentDevice().systemVersion.compare(version,
+    return UIDevice.currentDevice().systemVersion.compare(version as String,
         options: NSStringCompareOptions.NumericSearch) == NSComparisonResult.OrderedDescending
 }
 
 public func SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(version: NSString) -> Bool {
-    return UIDevice.currentDevice().systemVersion.compare(version,
+    return UIDevice.currentDevice().systemVersion.compare(version as String,
         options: NSStringCompareOptions.NumericSearch) != NSComparisonResult.OrderedAscending
 }
 
 public func SYSTEM_VERSION_LESS_THAN(version: NSString) -> Bool {
-    return UIDevice.currentDevice().systemVersion.compare(version,
+    return UIDevice.currentDevice().systemVersion.compare(version as String,
         options: NSStringCompareOptions.NumericSearch) == NSComparisonResult.OrderedAscending
 }
 
 public func SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(version: NSString) -> Bool {
-    return UIDevice.currentDevice().systemVersion.compare(version,
+    return UIDevice.currentDevice().systemVersion.compare(version as String,
         options: NSStringCompareOptions.NumericSearch) != NSComparisonResult.OrderedDescending
 }
 

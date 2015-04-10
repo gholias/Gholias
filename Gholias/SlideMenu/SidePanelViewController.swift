@@ -38,7 +38,7 @@ public class SidePanelViewController: UITableViewController{
     }
     
     override public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(TableView.CellIdentifiers.Cell, forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(TableView.CellIdentifiers.Cell, forIndexPath: indexPath) as! UITableViewCell
         cell.textLabel!.text = "Menu \(indexPath.row)"
         
         return cell

@@ -13,8 +13,8 @@ import Gholias
 //MARK: - BaseViewController
 public class BaseViewController: UIViewController {
     
-    override public func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        super.touchesBegan(touches as Set<NSObject>, withEvent: event)
+    public override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        super.touchesBegan(touches, withEvent: event)
         self.view.endEditing(true)
     }
 }
@@ -30,8 +30,8 @@ public class BaseTableViewController: UITableViewController {
         
     }
     
-    override public func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        super.touchesBegan(touches as Set<NSObject>, withEvent: event)
+    public override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        super.touchesBegan(touches, withEvent: event)
         self.endEditing()
     }
     

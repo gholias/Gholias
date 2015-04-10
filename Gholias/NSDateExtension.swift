@@ -42,7 +42,7 @@ public extension NSDate {
     
     func dateForNextWeekday(weekday:Int) -> NSDate {
         let today = NSDate()
-        let gregorian = NSCalendar(calendarIdentifier: NSGregorianCalendar)
+        let gregorian = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
         
         let weekdayComponents = gregorian?.components(NSCalendarUnit.CalendarUnitWeekday, fromDate: today)
         let componentsToSubtract = NSDateComponents()
@@ -60,7 +60,7 @@ public extension NSDate {
     
     func setHour(hour:Int) -> NSDate {
 
-        let gregorian = NSCalendar(calendarIdentifier: NSGregorianCalendar)
+        let gregorian = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)
         let timeComps = NSCalendarUnit.CalendarUnitEra | NSCalendarUnit.CalendarUnitYear | NSCalendarUnit.CalendarUnitMonth | NSCalendarUnit.CalendarUnitDay | NSCalendarUnit.CalendarUnitHour | NSCalendarUnit.CalendarUnitMinute | NSCalendarUnit.CalendarUnitSecond | NSCalendarUnit.CalendarUnitWeekday | NSCalendarUnit.CalendarUnitTimeZone
 
         let components = gregorian?.components(timeComps, fromDate: self)

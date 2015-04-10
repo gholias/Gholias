@@ -10,13 +10,13 @@ import Foundation
 
 public extension Int {
     func format(f: String) -> String {
-        return NSString(format: "%\(f)d", self)
+        return NSString(format: "%\(f)d", self) as String
     }
 }
 
 public extension Double {
     func format(f: String) -> String {
-        return NSString(format: "%\(f)f", self)
+        return NSString(format: "%\(f)f", self) as String
     }
 
     func toMoneyString() -> String {

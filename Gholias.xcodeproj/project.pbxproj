@@ -33,14 +33,13 @@
 		217455C51A98AC0A00A538F0 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217455BD1A98AC0A00A538F0 /* UIButtonExtensions.swift */; };
 		217455C81A98AC6200A538F0 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217455C61A98AC6200A538F0 /* StringExtensions.swift */; };
 		217455C91A98AC6200A538F0 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217455C71A98AC6200A538F0 /* UIImageExtensions.swift */; };
-		217455CE1A98B1AE00A538F0 /* XCGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217455CD1A98B1AE00A538F0 /* XCGLogger.swift */; };
 		21857C001AA13E7000C186D0 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21857BFF1AA13E7000C186D0 /* BaseWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		213EC3F11A98B54900A972A6 /* SwiftOverlays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftOverlays.swift; sourceTree = "<group>"; };
+		213EC3F11A98B54900A972A6 /* SwiftOverlays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftOverlays.swift; path = ../../SwiftOverlays/SwiftOverlays/SwiftOverlays.swift; sourceTree = "<group>"; };
 		213EC3F31A98B5AD00A972A6 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		213EC40C1A98FE7700A972A6 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
+		213EC40C1A98FE7700A972A6 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Async.swift; path = ../../Async/Async.swift; sourceTree = "<group>"; };
 		213EC40F1A98FFE600A972A6 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = "../../SCLAlertView-Swift/Classes/SCLAlertView.swift"; sourceTree = "<group>"; };
 		213EC4121A9903E900A972A6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		213EC4151A9941DA00A972A6 /* AppSettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettingsManager.swift; sourceTree = "<group>"; };
@@ -66,7 +65,6 @@
 		217455BD1A98AC0A00A538F0 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		217455C61A98AC6200A538F0 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		217455C71A98AC6200A538F0 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
-		217455CD1A98B1AE00A538F0 /* XCGLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCGLogger.swift; sourceTree = "<group>"; };
 		21857BFF1AA13E7000C186D0 /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,14 +111,6 @@
 				21857BFF1AA13E7000C186D0 /* BaseWebViewController.swift */,
 			);
 			name = ViewControllers;
-			sourceTree = "<group>";
-		};
-		213EC4141A9941AE00A972A6 /* XCGLogger */ = {
-			isa = PBXGroup;
-			children = (
-				217455CD1A98B1AE00A538F0 /* XCGLogger.swift */,
-			);
-			name = XCGLogger;
 			sourceTree = "<group>";
 		};
 		213EC4191A99478000A972A6 /* AppSettings */ = {
@@ -222,7 +212,6 @@
 		217455CC1A98B17A00A538F0 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				213EC4141A9941AE00A972A6 /* XCGLogger */,
 				213EC40E1A98FFE600A972A6 /* SCLAlertView */,
 				213EC40B1A98FE7700A972A6 /* Async */,
 				213EC3F01A98B54900A972A6 /* SwiftOverlays */,
@@ -327,7 +316,6 @@
 				213EC4241A994D7A00A972A6 /* ContainerViewController.swift in Sources */,
 				213EC3F21A98B54900A972A6 /* SwiftOverlays.swift in Sources */,
 				217455C51A98AC0A00A538F0 /* UIButtonExtensions.swift in Sources */,
-				217455CE1A98B1AE00A538F0 /* XCGLogger.swift in Sources */,
 				21857C001AA13E7000C186D0 /* BaseWebViewController.swift in Sources */,
 				213EC40D1A98FE7700A972A6 /* Async.swift in Sources */,
 				217455C11A98AC0A00A538F0 /* UIColorExtensions.swift in Sources */,

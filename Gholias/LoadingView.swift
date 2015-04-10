@@ -45,7 +45,7 @@ public class LoadingView: UIView {
         var imagesArray:[UIImage] = []
         
         for i in 0..<35 {
-          let image = UIImage(named: NSString(format: "loading_%d", i), inBundle: NSBundle(forClass: Gholias.LoadingView), compatibleWithTraitCollection: nil)
+          let image = UIImage(named: NSString(format: "loading_%d", i) as String, inBundle: NSBundle(forClass: Gholias.LoadingView), compatibleWithTraitCollection: nil)
             imagesArray.insert(image!.imageWithColor(self.tintColor), atIndex: 0)
         }
         

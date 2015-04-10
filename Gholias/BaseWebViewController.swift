@@ -27,21 +27,21 @@ public class BaseWebViewController: BaseViewController, UIWebViewDelegate {
         self.webview.loadRequest(request)
     }
     
-    func webView(webView: UIWebView!, didFailLoadWithError error: NSError!) {
+    public func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
         print("Webview fail with error \(error)");
     }
     
-    func webView(webView: UIWebView!, shouldStartLoadWithRequest request: NSURLRequest!, navigationType: UIWebViewNavigationType) -> Bool {
+    public func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         return true;
     }
     
-    func webViewDidStartLoad(webView: UIWebView!) {
+    public func webViewDidStartLoad(webView: UIWebView) {
         NSLog("webViewDidStartLoad")
         self.loadingview?.show()
         self.webview.hidden = true
     }
     
-    func webViewDidFinishLoad(webView: UIWebView!) {
+    public func webViewDidFinishLoad(webView: UIWebView) {
                 NSLog("webViewDidFinishLoad")
         self.loadingview?.hide()
         self.webview.hidden = false

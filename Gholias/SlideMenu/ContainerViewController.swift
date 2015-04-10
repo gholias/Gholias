@@ -46,7 +46,7 @@ public class ContainerViewController: UIViewController, ContainerViewControllerD
     let centerPanelExpandedOffset: CGFloat = 80
 
     
-    override public init() {
+    public init() {
         super.init(nibName: nil, bundle: nil)
     }
     
