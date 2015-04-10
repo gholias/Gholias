@@ -7,13 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		213EC3EF1A98B53F00A972A6 /* PPSwiftGifs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC3EE1A98B53F00A972A6 /* PPSwiftGifs.swift */; };
 		213EC3F21A98B54900A972A6 /* SwiftOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC3F11A98B54900A972A6 /* SwiftOverlays.swift */; };
 		213EC3F41A98B5AD00A972A6 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213EC3F31A98B5AD00A972A6 /* ImageIO.framework */; };
-		213EC4071A98FD2800A972A6 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC4031A98FD2800A972A6 /* Dispatcher.swift */; };
-		213EC4081A98FD2800A972A6 /* DispatchGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC4041A98FD2800A972A6 /* DispatchGroup.swift */; };
-		213EC4091A98FD2800A972A6 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC4051A98FD2800A972A6 /* DispatchQueue.swift */; };
-		213EC40A1A98FD2800A972A6 /* DispatchTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC4061A98FD2800A972A6 /* DispatchTimer.swift */; };
 		213EC40D1A98FE7700A972A6 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC40C1A98FE7700A972A6 /* Async.swift */; };
 		213EC4101A98FFE600A972A6 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC40F1A98FFE600A972A6 /* SCLAlertView.swift */; };
 		213EC4131A9903E900A972A6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC4121A9903E900A972A6 /* BaseViewController.swift */; };
@@ -43,15 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		213EC3EE1A98B53F00A972A6 /* PPSwiftGifs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPSwiftGifs.swift; sourceTree = "<group>"; };
 		213EC3F11A98B54900A972A6 /* SwiftOverlays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftOverlays.swift; sourceTree = "<group>"; };
 		213EC3F31A98B5AD00A972A6 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		213EC4031A98FD2800A972A6 /* Dispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
-		213EC4041A98FD2800A972A6 /* DispatchGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchGroup.swift; sourceTree = "<group>"; };
-		213EC4051A98FD2800A972A6 /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
-		213EC4061A98FD2800A972A6 /* DispatchTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchTimer.swift; sourceTree = "<group>"; };
 		213EC40C1A98FE7700A972A6 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
-		213EC40F1A98FFE600A972A6 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		213EC40F1A98FFE600A972A6 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = "../../SCLAlertView-Swift/Classes/SCLAlertView.swift"; sourceTree = "<group>"; };
 		213EC4121A9903E900A972A6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		213EC4151A9941DA00A972A6 /* AppSettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettingsManager.swift; sourceTree = "<group>"; };
 		213EC41A1A99478E00A972A6 /* AppSettingsDefault.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppSettingsDefault.plist; sourceTree = "<group>"; };
@@ -92,31 +82,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		213EC3ED1A98B53F00A972A6 /* PPSwiftGifs */ = {
-			isa = PBXGroup;
-			children = (
-				213EC3EE1A98B53F00A972A6 /* PPSwiftGifs.swift */,
-			);
-			path = PPSwiftGifs;
-			sourceTree = "<group>";
-		};
 		213EC3F01A98B54900A972A6 /* SwiftOverlays */ = {
 			isa = PBXGroup;
 			children = (
 				213EC3F11A98B54900A972A6 /* SwiftOverlays.swift */,
 			);
 			path = SwiftOverlays;
-			sourceTree = "<group>";
-		};
-		213EC4021A98FD2800A972A6 /* Dispatcher */ = {
-			isa = PBXGroup;
-			children = (
-				213EC4031A98FD2800A972A6 /* Dispatcher.swift */,
-				213EC4041A98FD2800A972A6 /* DispatchGroup.swift */,
-				213EC4051A98FD2800A972A6 /* DispatchQueue.swift */,
-				213EC4061A98FD2800A972A6 /* DispatchTimer.swift */,
-			);
-			path = Dispatcher;
 			sourceTree = "<group>";
 		};
 		213EC40B1A98FE7700A972A6 /* Async */ = {
@@ -254,9 +225,7 @@
 				213EC4141A9941AE00A972A6 /* XCGLogger */,
 				213EC40E1A98FFE600A972A6 /* SCLAlertView */,
 				213EC40B1A98FE7700A972A6 /* Async */,
-				213EC4021A98FD2800A972A6 /* Dispatcher */,
 				213EC3F01A98B54900A972A6 /* SwiftOverlays */,
-				213EC3ED1A98B53F00A972A6 /* PPSwiftGifs */,
 			);
 			name = Libs;
 			sourceTree = "<group>";
@@ -356,20 +325,15 @@
 				217455BE1A98AC0A00A538F0 /* NSDateExtension.swift in Sources */,
 				2174556B1A97E3DE00A538F0 /* NumbersExtension.swift in Sources */,
 				213EC4241A994D7A00A972A6 /* ContainerViewController.swift in Sources */,
-				213EC3EF1A98B53F00A972A6 /* PPSwiftGifs.swift in Sources */,
 				213EC3F21A98B54900A972A6 /* SwiftOverlays.swift in Sources */,
-				213EC4091A98FD2800A972A6 /* DispatchQueue.swift in Sources */,
 				217455C51A98AC0A00A538F0 /* UIButtonExtensions.swift in Sources */,
 				217455CE1A98B1AE00A538F0 /* XCGLogger.swift in Sources */,
 				21857C001AA13E7000C186D0 /* BaseWebViewController.swift in Sources */,
-				213EC4081A98FD2800A972A6 /* DispatchGroup.swift in Sources */,
-				213EC40A1A98FD2800A972A6 /* DispatchTimer.swift in Sources */,
 				213EC40D1A98FE7700A972A6 /* Async.swift in Sources */,
 				217455C11A98AC0A00A538F0 /* UIColorExtensions.swift in Sources */,
 				213EC4161A9941DA00A972A6 /* AppSettingsManager.swift in Sources */,
 				217455C81A98AC6200A538F0 /* StringExtensions.swift in Sources */,
 				217455C21A98AC0A00A538F0 /* Functions.swift in Sources */,
-				213EC4071A98FD2800A972A6 /* Dispatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
