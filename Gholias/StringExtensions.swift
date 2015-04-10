@@ -12,6 +12,9 @@ public extension String {
         return self.stringByTrimmingCharactersInSet(.whitespaceAndNewlineCharacterSet())
     }
     
+    var floatValue: Float {
+        return (self as NSString).floatValue
+    }
     
     func toDate() -> NSDate {
         let dateFormatter = NSDateFormatter()
@@ -25,6 +28,17 @@ public extension String {
         var emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)!
         let result = emailTest.evaluateWithObject(self)
         return result
+    }
+    
+    subscript (i: Int) -> String {
+        if countElements(self) > i {
+            return String(Array(self)[i])
+        }
+        return ""
+    }
+    
+    func indexAt(theInt:Int)->String.Index {
+        return advance(self.startIndex, theInt)
     }
 
 }

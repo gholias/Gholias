@@ -28,14 +28,14 @@ public extension NSDate {
     func secondsFrom(date:NSDate) -> Int{
         return NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitSecond, fromDate: date, toDate: self, options: nil).second
     }
-    func offsetFrom(date:NSDate) -> String {
-        if yearsFrom(date)   > 0 { return "\(yearsFrom(date))y"   }
-        if monthsFrom(date)  > 0 { return "\(monthsFrom(date))M"  }
-        if daysFrom(date)    > 0 { return "\(daysFrom(date))d"    }
-        if hoursFrom(date)   > 0 { return "\(hoursFrom(date))h"   }
-        if minutesFrom(date) > 0 { return "\(minutesFrom(date))m" }
-        if secondsFrom(date) > 0 { return "\(secondsFrom(date))s" }
-        return ""
+    public func offsetFrom(date:NSDate) -> String {
+        if self.yearsFrom(date)   > 0 { return "\(self.yearsFrom(date))A"   }
+        if self.monthsFrom(date)  > 0 { return "\(self.monthsFrom(date))M"  }
+        if self.daysFrom(date)    > 0 { return "\(self.daysFrom(date))d"    }
+        if self.hoursFrom(date)   > 0 { return "\(self.hoursFrom(date))h"   }
+        if self.minutesFrom(date) > 0 { return "\(self.minutesFrom(date))m" }
+        if self.secondsFrom(date) > 0 { return "\(self.secondsFrom(date))s" }
+        return "0s"
     }
     
    
