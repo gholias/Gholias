@@ -14,7 +14,7 @@ import Gholias
 public class BaseViewController: UIViewController {
     
     override public func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        super.touchesBegan(touches, withEvent: event)
+        super.touchesBegan(touches as Set<NSObject>, withEvent: event)
         self.view.endEditing(true)
     }
 }
@@ -31,7 +31,7 @@ public class BaseTableViewController: UITableViewController {
     }
     
     override public func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        super.touchesBegan(touches, withEvent: event)
+        super.touchesBegan(touches as Set<NSObject>, withEvent: event)
         self.endEditing()
     }
     
@@ -113,7 +113,7 @@ public extension UIViewController {
     
     public func heightForText(text:String, font:UIFont ) -> CGFloat {
         var attributes: NSDictionary = NSDictionary(objectsAndKeys: font, NSFontAttributeName)
-        var titleRect = text.boundingRectWithSize(CGSizeMake(self.view.frame.size.width - 30, 1128), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: attributes, context: nil)
+        var titleRect = text.boundingRectWithSize(CGSizeMake(self.view.frame.size.width - 30, 1128), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: attributes as [NSObject : AnyObject], context: nil)
         return titleRect.height
     }
 }
