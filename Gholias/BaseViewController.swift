@@ -25,8 +25,8 @@ public class BaseTableViewController: UITableViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         
-        var tapGesture = UITapGestureRecognizer(target: self, action: "endEditing")
-        self.tableView.addGestureRecognizer(tapGesture)
+      //  var tapGesture = UITapGestureRecognizer(target: self, action: "endEditing")
+      //  self.tableView.addGestureRecognizer(tapGesture)
         
     }
     

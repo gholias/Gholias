@@ -29,19 +29,13 @@ public extension NSDate {
         return NSCalendar.currentCalendar().components(NSCalendarUnit.CalendarUnitSecond, fromDate: date, toDate: self, options: nil).second
     }
     public func offsetFrom(date:NSDate) -> String {
-        NSLog("self %@", self)
-        NSLog("date %@", date)
-        
-        NSLog("self.secondsFrom(date) \(self.secondsFrom(date))")
-        
-        
-        if self.yearsFrom(date)   > 0 { return "\(self.yearsFrom(date))y"   }
+        if self.yearsFrom(date)   > 0 { return "\(self.yearsFrom(date))A"   }
         if self.monthsFrom(date)  > 0 { return "\(self.monthsFrom(date))M"  }
         if self.daysFrom(date)    > 0 { return "\(self.daysFrom(date))d"    }
         if self.hoursFrom(date)   > 0 { return "\(self.hoursFrom(date))h"   }
         if self.minutesFrom(date) > 0 { return "\(self.minutesFrom(date))m" }
         if self.secondsFrom(date) > 0 { return "\(self.secondsFrom(date))s" }
-        return ""
+        return "0s"
     }
     
    
