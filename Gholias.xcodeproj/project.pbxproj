@@ -36,6 +36,15 @@
 		218669181AE6DC6C003F7746 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 218669151AE6DC6C003F7746 /* ProgressHUD.bundle */; };
 		218669191AE6DC6C003F7746 /* ProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 218669161AE6DC6C003F7746 /* ProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2186691A1AE6DC6C003F7746 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 218669171AE6DC6C003F7746 /* ProgressHUD.m */; };
+		2186692A1AE6DF39003F7746 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 218669211AE6DF39003F7746 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2186692B1AE6DF39003F7746 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 218669221AE6DF39003F7746 /* ALView+PureLayout.m */; };
+		2186692C1AE6DF39003F7746 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 218669231AE6DF39003F7746 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2186692D1AE6DF39003F7746 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 218669241AE6DF39003F7746 /* NSArray+PureLayout.m */; };
+		2186692E1AE6DF39003F7746 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 218669251AE6DF39003F7746 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2186692F1AE6DF39003F7746 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 218669261AE6DF39003F7746 /* NSLayoutConstraint+PureLayout.m */; };
+		218669301AE6DF39003F7746 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 218669271AE6DF39003F7746 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		218669311AE6DF39003F7746 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 218669281AE6DF39003F7746 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		218669321AE6DF39003F7746 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 218669291AE6DF39003F7746 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +79,15 @@
 		218669151AE6DC6C003F7746 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		218669161AE6DC6C003F7746 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		218669171AE6DC6C003F7746 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		218669211AE6DF39003F7746 /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
+		218669221AE6DF39003F7746 /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
+		218669231AE6DF39003F7746 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		218669241AE6DF39003F7746 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		218669251AE6DF39003F7746 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		218669261AE6DF39003F7746 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		218669271AE6DF39003F7746 /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
+		218669281AE6DF39003F7746 /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
+		218669291AE6DF39003F7746 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +226,7 @@
 		217455CC1A98B17A00A538F0 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				218669201AE6DF39003F7746 /* PureLayout */,
 				218669141AE6DC6C003F7746 /* ProgressHUD */,
 				213EC40E1A98FFE600A972A6 /* SCLAlertView */,
 				213EC40B1A98FE7700A972A6 /* Async */,
@@ -226,6 +245,23 @@
 			path = ProgressHUD/ProgressHUD/ProgressHUD;
 			sourceTree = SOURCE_ROOT;
 		};
+		218669201AE6DF39003F7746 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				218669211AE6DF39003F7746 /* ALView+PureLayout.h */,
+				218669221AE6DF39003F7746 /* ALView+PureLayout.m */,
+				218669231AE6DF39003F7746 /* NSArray+PureLayout.h */,
+				218669241AE6DF39003F7746 /* NSArray+PureLayout.m */,
+				218669251AE6DF39003F7746 /* NSLayoutConstraint+PureLayout.h */,
+				218669261AE6DF39003F7746 /* NSLayoutConstraint+PureLayout.m */,
+				218669271AE6DF39003F7746 /* PureLayout+Internal.h */,
+				218669281AE6DF39003F7746 /* PureLayout.h */,
+				218669291AE6DF39003F7746 /* PureLayoutDefines.h */,
+			);
+			name = PureLayout;
+			path = PureLayout/PureLayout/PureLayout;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -234,7 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				217455541A97E38C00A538F0 /* Gholias.h in Headers */,
+				218669321AE6DF39003F7746 /* PureLayoutDefines.h in Headers */,
+				218669301AE6DF39003F7746 /* PureLayout+Internal.h in Headers */,
+				2186692E1AE6DF39003F7746 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				2186692A1AE6DF39003F7746 /* ALView+PureLayout.h in Headers */,
 				218669191AE6DC6C003F7746 /* ProgressHUD.h in Headers */,
+				2186692C1AE6DF39003F7746 /* NSArray+PureLayout.h in Headers */,
+				218669311AE6DF39003F7746 /* PureLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,11 +364,14 @@
 				213EC4261A994D7A00A972A6 /* SidePanelViewController.swift in Sources */,
 				217455C31A98AC0A00A538F0 /* ArrayExtensions.swift in Sources */,
 				217455BE1A98AC0A00A538F0 /* NSDateExtension.swift in Sources */,
+				2186692D1AE6DF39003F7746 /* NSArray+PureLayout.m in Sources */,
+				2186692F1AE6DF39003F7746 /* NSLayoutConstraint+PureLayout.m in Sources */,
 				2174556B1A97E3DE00A538F0 /* NumbersExtension.swift in Sources */,
 				213EC4241A994D7A00A972A6 /* ContainerViewController.swift in Sources */,
 				217455C51A98AC0A00A538F0 /* UIButtonExtensions.swift in Sources */,
 				21857C001AA13E7000C186D0 /* BaseWebViewController.swift in Sources */,
 				213EC40D1A98FE7700A972A6 /* Async.swift in Sources */,
+				2186692B1AE6DF39003F7746 /* ALView+PureLayout.m in Sources */,
 				217455C11A98AC0A00A538F0 /* UIColorExtensions.swift in Sources */,
 				213EC4161A9941DA00A972A6 /* AppSettingsManager.swift in Sources */,
 				217455C81A98AC6200A538F0 /* StringExtensions.swift in Sources */,

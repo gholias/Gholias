@@ -12,5 +12,8 @@ https://github.com/aleclarson/dispatcher
 - Async
 https://github.com/duemunk/Async
 
-- SwiftOverlays
-https://github.com/peterprokop/SwiftOverlays
+- ProgressHUD
+https://github.com/relatedcode/ProgressHUD
+
+- PureLayout
+https://github.com/smileyborg/PureLayout

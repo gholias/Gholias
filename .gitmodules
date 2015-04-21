@@ -7,3 +7,6 @@
 [submodule "ProgressHUD"]
 	path = ProgressHUD
 	url = https://github.com/relatedcode/ProgressHUD.git
+[submodule "PureLayout"]
+	path = PureLayout
+	url = https://github.com/smileyborg/PureLayout.git

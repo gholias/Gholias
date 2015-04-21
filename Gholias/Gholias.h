@@ -11,7 +11,7 @@
 
 
 #import "ProgressHUD.h"
-
+#import "PureLayout.h"
 
 //! Project version number for Gholias.
 FOUNDATION_EXPORT double GholiasVersionNumber;
