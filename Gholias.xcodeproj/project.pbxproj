@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		213EC3F21A98B54900A972A6 /* SwiftOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC3F11A98B54900A972A6 /* SwiftOverlays.swift */; };
 		213EC3F41A98B5AD00A972A6 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213EC3F31A98B5AD00A972A6 /* ImageIO.framework */; };
 		213EC40D1A98FE7700A972A6 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC40C1A98FE7700A972A6 /* Async.swift */; };
 		213EC4101A98FFE600A972A6 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC40F1A98FFE600A972A6 /* SCLAlertView.swift */; };
@@ -34,11 +33,12 @@
 		217455C81A98AC6200A538F0 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217455C61A98AC6200A538F0 /* StringExtensions.swift */; };
 		217455C91A98AC6200A538F0 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217455C71A98AC6200A538F0 /* UIImageExtensions.swift */; };
 		21857C001AA13E7000C186D0 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21857BFF1AA13E7000C186D0 /* BaseWebViewController.swift */; };
-		21F68ACB1AE68F8B00725B0D /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F68ACA1AE68F8B00725B0D /* UIView+Utils.swift */; };
+		218669181AE6DC6C003F7746 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 218669151AE6DC6C003F7746 /* ProgressHUD.bundle */; };
+		218669191AE6DC6C003F7746 /* ProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 218669161AE6DC6C003F7746 /* ProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2186691A1AE6DC6C003F7746 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 218669171AE6DC6C003F7746 /* ProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		213EC3F11A98B54900A972A6 /* SwiftOverlays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftOverlays.swift; path = ../../SwiftOverlays/SwiftOverlays/SwiftOverlays.swift; sourceTree = "<group>"; };
 		213EC3F31A98B5AD00A972A6 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		213EC40C1A98FE7700A972A6 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Async.swift; path = ../../Async/Async.swift; sourceTree = "<group>"; };
 		213EC40F1A98FFE600A972A6 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = "../../SCLAlertView-Swift/Classes/SCLAlertView.swift"; sourceTree = "<group>"; };
@@ -67,7 +67,9 @@
 		217455C61A98AC6200A538F0 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		217455C71A98AC6200A538F0 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		21857BFF1AA13E7000C186D0 /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
-		21F68ACA1AE68F8B00725B0D /* UIView+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Utils.swift"; path = "../../../../Clientes/HTV/optimus-ios/Optimus/Optimus/Extensions/UIView+Utils.swift"; sourceTree = "<group>"; };
+		218669151AE6DC6C003F7746 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		218669161AE6DC6C003F7746 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		218669171AE6DC6C003F7746 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,14 +84,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		213EC3F01A98B54900A972A6 /* SwiftOverlays */ = {
-			isa = PBXGroup;
-			children = (
-				213EC3F11A98B54900A972A6 /* SwiftOverlays.swift */,
-			);
-			path = SwiftOverlays;
-			sourceTree = "<group>";
-		};
 		213EC40B1A98FE7700A972A6 /* Async */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,7 +181,6 @@
 		217455B51A98ABDA00A538F0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				21F68ACA1AE68F8B00725B0D /* UIView+Utils.swift */,
 				217455C61A98AC6200A538F0 /* StringExtensions.swift */,
 				217455C71A98AC6200A538F0 /* UIImageExtensions.swift */,
 				217455BB1A98AC0A00A538F0 /* ArrayExtensions.swift */,
@@ -215,12 +208,23 @@
 		217455CC1A98B17A00A538F0 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				218669141AE6DC6C003F7746 /* ProgressHUD */,
 				213EC40E1A98FFE600A972A6 /* SCLAlertView */,
 				213EC40B1A98FE7700A972A6 /* Async */,
-				213EC3F01A98B54900A972A6 /* SwiftOverlays */,
 			);
 			name = Libs;
 			sourceTree = "<group>";
+		};
+		218669141AE6DC6C003F7746 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				218669151AE6DC6C003F7746 /* ProgressHUD.bundle */,
+				218669161AE6DC6C003F7746 /* ProgressHUD.h */,
+				218669171AE6DC6C003F7746 /* ProgressHUD.m */,
+			);
+			name = ProgressHUD;
+			path = ProgressHUD/ProgressHUD/ProgressHUD;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -230,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				217455541A97E38C00A538F0 /* Gholias.h in Headers */,
+				218669191AE6DC6C003F7746 /* ProgressHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +297,7 @@
 			files = (
 				213EC4321A9E444A00A972A6 /* Loading.xcassets in Resources */,
 				213EC41B1A99478E00A972A6 /* AppSettingsDefault.plist in Resources */,
+				218669181AE6DC6C003F7746 /* ProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,17 +314,16 @@
 				213EC4291A99E22E00A972A6 /* APIManager.swift in Sources */,
 				213EC4251A994D7A00A972A6 /* HamburgerButton.swift in Sources */,
 				213EC4301A9E440600A972A6 /* LoadingView.swift in Sources */,
+				2186691A1AE6DC6C003F7746 /* ProgressHUD.m in Sources */,
 				213EC4101A98FFE600A972A6 /* SCLAlertView.swift in Sources */,
 				217455C01A98AC0A00A538F0 /* Macros.swift in Sources */,
 				217455BF1A98AC0A00A538F0 /* UITextFieldExtensions.swift in Sources */,
 				213EC4131A9903E900A972A6 /* BaseViewController.swift in Sources */,
-				21F68ACB1AE68F8B00725B0D /* UIView+Utils.swift in Sources */,
 				213EC4261A994D7A00A972A6 /* SidePanelViewController.swift in Sources */,
 				217455C31A98AC0A00A538F0 /* ArrayExtensions.swift in Sources */,
 				217455BE1A98AC0A00A538F0 /* NSDateExtension.swift in Sources */,
 				2174556B1A97E3DE00A538F0 /* NumbersExtension.swift in Sources */,
 				213EC4241A994D7A00A972A6 /* ContainerViewController.swift in Sources */,
-				213EC3F21A98B54900A972A6 /* SwiftOverlays.swift in Sources */,
 				217455C51A98AC0A00A538F0 /* UIButtonExtensions.swift in Sources */,
 				21857C001AA13E7000C186D0 /* BaseWebViewController.swift in Sources */,
 				213EC40D1A98FE7700A972A6 /* Async.swift in Sources */,
@@ -430,6 +435,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -447,6 +453,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

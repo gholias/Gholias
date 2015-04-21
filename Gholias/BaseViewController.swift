@@ -63,11 +63,11 @@ public extension UIViewController {
         if subtitle != "" {
             text = title + "\n" + subtitle
         }
-        self.showWaitOverlayWithText(text)
+        ProgressHUD.show(text)
     }
 
     public func hideLoading() {
-        SwiftOverlays.removeAllOverlaysFromView(self.view)
+        ProgressHUD.dismiss()
     }
     
     public func showNetWorkActivity() {

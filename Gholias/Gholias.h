@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <ImageIO/ImageIO.h>
 
+
+#import "ProgressHUD.h"
+
+
 //! Project version number for Gholias.
 FOUNDATION_EXPORT double GholiasVersionNumber;
 

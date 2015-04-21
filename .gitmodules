@@ -1,9 +1,9 @@
 [submodule "SCLAlertView-Swift"]
 	path = SCLAlertView-Swift
 	url = https://gholias@github.com/vikmeup/SCLAlertView-Swift.git
-[submodule "SwiftOverlays"]
-	path = SwiftOverlays
-	url = https://gholias@github.com/peterprokop/SwiftOverlays.git
 [submodule "Async"]
 	path = Async
 	url = https://gholias@github.com/duemunk/Async.git
+[submodule "ProgressHUD"]
+	path = ProgressHUD
+	url = https://github.com/relatedcode/ProgressHUD.git
