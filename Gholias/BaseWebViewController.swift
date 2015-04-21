@@ -11,7 +11,7 @@ import UIKit
 public class BaseWebViewController: BaseViewController, UIWebViewDelegate {
     
     @IBOutlet weak var webview: UIWebView!
-    @IBOutlet weak var loadingview: LoadingView?
+    @IBOutlet weak public var loadingview: LoadingView?
 
     override public func viewDidLoad() {
         super.viewDidLoad()

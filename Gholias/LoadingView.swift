@@ -27,7 +27,7 @@ public class LoadingView: UIView {
         super.layoutSubviews()
     }
     
-    func setupLoading() {
+    public func setupLoading() {
         
         self.loadingImage = UIImageView(frame: CGRectZero)
         self.loadingImage.frame.size.width = 40

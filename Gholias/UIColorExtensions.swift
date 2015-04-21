@@ -20,6 +20,18 @@ public extension UIColor {
         )
     }
     
+    func hexString() -> String {
+        var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0
+        var a: CGFloat = 0
+        var result = self.getRed(&r, green: &g, blue: &b, alpha: &a)
+        if ((result == false) || (a != 1.0)) {
+            return "";
+        }
+        let hexString = NSString(format: "%02X%02X%02X",
+            NSInteger(r * 255),NSInteger(g * 255),NSInteger(b * 255))
+        return hexString as String
+    }
+    
     convenience init(rgb: UInt) {
         self.init(rgb: rgb, alpha: 1.0)
     }

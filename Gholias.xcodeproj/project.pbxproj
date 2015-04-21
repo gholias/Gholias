@@ -34,6 +34,7 @@
 		217455C81A98AC6200A538F0 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217455C61A98AC6200A538F0 /* StringExtensions.swift */; };
 		217455C91A98AC6200A538F0 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217455C71A98AC6200A538F0 /* UIImageExtensions.swift */; };
 		21857C001AA13E7000C186D0 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21857BFF1AA13E7000C186D0 /* BaseWebViewController.swift */; };
+		21F68ACB1AE68F8B00725B0D /* UIView+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F68ACA1AE68F8B00725B0D /* UIView+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		217455C61A98AC6200A538F0 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		217455C71A98AC6200A538F0 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		21857BFF1AA13E7000C186D0 /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
+		21F68ACA1AE68F8B00725B0D /* UIView+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Utils.swift"; path = "../../../../Clientes/HTV/optimus-ios/Optimus/Optimus/Extensions/UIView+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 		217455B51A98ABDA00A538F0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				21F68ACA1AE68F8B00725B0D /* UIView+Utils.swift */,
 				217455C61A98AC6200A538F0 /* StringExtensions.swift */,
 				217455C71A98AC6200A538F0 /* UIImageExtensions.swift */,
 				217455BB1A98AC0A00A538F0 /* ArrayExtensions.swift */,
@@ -309,6 +312,7 @@
 				217455C01A98AC0A00A538F0 /* Macros.swift in Sources */,
 				217455BF1A98AC0A00A538F0 /* UITextFieldExtensions.swift in Sources */,
 				213EC4131A9903E900A972A6 /* BaseViewController.swift in Sources */,
+				21F68ACB1AE68F8B00725B0D /* UIView+Utils.swift in Sources */,
 				213EC4261A994D7A00A972A6 /* SidePanelViewController.swift in Sources */,
 				217455C31A98AC0A00A538F0 /* ArrayExtensions.swift in Sources */,
 				217455BE1A98AC0A00A538F0 /* NSDateExtension.swift in Sources */,
