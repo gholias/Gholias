@@ -10,3 +10,6 @@
 [submodule "PureLayout"]
 	path = PureLayout
 	url = https://github.com/smileyborg/PureLayout.git
+[submodule "DrawerController"]
+	path = DrawerController
+	url = https://github.com/sascha/DrawerController.git

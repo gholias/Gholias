@@ -45,6 +45,10 @@
 		218669301AE6DF39003F7746 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 218669271AE6DF39003F7746 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		218669311AE6DF39003F7746 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 218669281AE6DF39003F7746 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		218669321AE6DF39003F7746 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 218669291AE6DF39003F7746 /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		218B34011AF69BC40053EBC9 /* AnimatedMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218B33FD1AF69BC40053EBC9 /* AnimatedMenuButton.swift */; };
+		218B34021AF69BC40053EBC9 /* DrawerBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218B33FE1AF69BC40053EBC9 /* DrawerBarButtonItem.swift */; };
+		218B34031AF69BC40053EBC9 /* DrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218B33FF1AF69BC40053EBC9 /* DrawerController.swift */; };
+		218B34041AF69BC40053EBC9 /* DrawerVisualState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218B34001AF69BC40053EBC9 /* DrawerVisualState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +92,10 @@
 		218669271AE6DF39003F7746 /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
 		218669281AE6DF39003F7746 /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
 		218669291AE6DF39003F7746 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
+		218B33FD1AF69BC40053EBC9 /* AnimatedMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedMenuButton.swift; sourceTree = "<group>"; };
+		218B33FE1AF69BC40053EBC9 /* DrawerBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerBarButtonItem.swift; sourceTree = "<group>"; };
+		218B33FF1AF69BC40053EBC9 /* DrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerController.swift; sourceTree = "<group>"; };
+		218B34001AF69BC40053EBC9 /* DrawerVisualState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerVisualState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +234,7 @@
 		217455CC1A98B17A00A538F0 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				218B33FC1AF69BC40053EBC9 /* DrawerController */,
 				218669201AE6DF39003F7746 /* PureLayout */,
 				218669141AE6DC6C003F7746 /* ProgressHUD */,
 				213EC40E1A98FFE600A972A6 /* SCLAlertView */,
@@ -260,6 +269,18 @@
 			);
 			name = PureLayout;
 			path = PureLayout/PureLayout/PureLayout;
+			sourceTree = SOURCE_ROOT;
+		};
+		218B33FC1AF69BC40053EBC9 /* DrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				218B33FD1AF69BC40053EBC9 /* AnimatedMenuButton.swift */,
+				218B33FE1AF69BC40053EBC9 /* DrawerBarButtonItem.swift */,
+				218B33FF1AF69BC40053EBC9 /* DrawerController.swift */,
+				218B34001AF69BC40053EBC9 /* DrawerVisualState.swift */,
+			);
+			name = DrawerController;
+			path = DrawerController/DrawerController;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -356,11 +377,13 @@
 				213EC4291A99E22E00A972A6 /* APIManager.swift in Sources */,
 				213EC4251A994D7A00A972A6 /* HamburgerButton.swift in Sources */,
 				213EC4301A9E440600A972A6 /* LoadingView.swift in Sources */,
+				218B34041AF69BC40053EBC9 /* DrawerVisualState.swift in Sources */,
 				2186691A1AE6DC6C003F7746 /* ProgressHUD.m in Sources */,
 				213EC4101A98FFE600A972A6 /* SCLAlertView.swift in Sources */,
 				217455C01A98AC0A00A538F0 /* Macros.swift in Sources */,
 				217455BF1A98AC0A00A538F0 /* UITextFieldExtensions.swift in Sources */,
 				213EC4131A9903E900A972A6 /* BaseViewController.swift in Sources */,
+				218B34011AF69BC40053EBC9 /* AnimatedMenuButton.swift in Sources */,
 				213EC4261A994D7A00A972A6 /* SidePanelViewController.swift in Sources */,
 				217455C31A98AC0A00A538F0 /* ArrayExtensions.swift in Sources */,
 				217455BE1A98AC0A00A538F0 /* NSDateExtension.swift in Sources */,
@@ -370,8 +393,10 @@
 				213EC4241A994D7A00A972A6 /* ContainerViewController.swift in Sources */,
 				217455C51A98AC0A00A538F0 /* UIButtonExtensions.swift in Sources */,
 				21857C001AA13E7000C186D0 /* BaseWebViewController.swift in Sources */,
+				218B34021AF69BC40053EBC9 /* DrawerBarButtonItem.swift in Sources */,
 				213EC40D1A98FE7700A972A6 /* Async.swift in Sources */,
 				2186692B1AE6DF39003F7746 /* ALView+PureLayout.m in Sources */,
+				218B34031AF69BC40053EBC9 /* DrawerController.swift in Sources */,
 				217455C11A98AC0A00A538F0 /* UIColorExtensions.swift in Sources */,
 				213EC4161A9941DA00A972A6 /* AppSettingsManager.swift in Sources */,
 				217455C81A98AC6200A538F0 /* StringExtensions.swift in Sources */,

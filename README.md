@@ -6,8 +6,8 @@ Gholias iOS Swift framework
 - SCLAlertView
 https://github.com/vikmeup/SCLAlertView-Swift
 
-- Dispatcher
-https://github.com/aleclarson/dispatcher
+- DrawerController
+https://github.com/sascha/DrawerController
 
 - Async
 https://github.com/duemunk/Async
