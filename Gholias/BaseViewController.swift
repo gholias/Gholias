@@ -116,4 +116,24 @@ public extension UIViewController {
         var titleRect = text.boundingRectWithSize(CGSizeMake(self.view.frame.size.width - 30, 1128), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: attributes as [NSObject : AnyObject], context: nil)
         return titleRect.height
     }
+    
+    // MARK: - DrawerMenu
+    func setupLeftMenuButton() {
+        let leftDrawerButton = DrawerBarButtonItem(target: self, action: "leftDrawerButtonPress:")
+        self.navigationItem.setLeftBarButtonItem(leftDrawerButton, animated: true)
+    }
+    
+    func setupRightMenuButton() {
+        let rightDrawerButton = DrawerBarButtonItem(target: self, action: "rightDrawerButtonPress:")
+        self.navigationItem.setRightBarButtonItem(rightDrawerButton, animated: true)
+    }
+    
+    func leftDrawerButtonPress(sender: AnyObject?) {
+        self.evo_drawerController?.toggleDrawerSide(.Left, animated: true, completion: nil)
+    }
+    
+    func rightDrawerButtonPress(sender: AnyObject?) {
+        self.evo_drawerController?.toggleDrawerSide(.Right, animated: true, completion: nil)
+    }
+    
 }

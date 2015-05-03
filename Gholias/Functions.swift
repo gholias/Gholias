@@ -78,3 +78,37 @@ public func SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(version: NSString) -> Bool {
         options: NSStringCompareOptions.NumericSearch) != NSComparisonResult.OrderedDescending
 }
 
+//MARK: - AppDelegate and DrawerMenu
+public func initDrawerController(#window: UIWindow, #storyboardName: String, #centerControllerIdentifier: String, #leftSideControllerIdentifier: String?, #rightSideControllerIdentifier: String?) -> DrawerController {
+    
+    
+    let storyboard = UIStoryboard(name: storyboardName, bundle: nil);
+    
+    let centerController = storyboard.instantiateViewControllerWithIdentifier(centerControllerIdentifier) as! UIViewController;
+    
+    
+    var leftSideController:UIViewController? = nil
+    var rightSideController:UIViewController? = nil
+    
+    if leftSideControllerIdentifier != nil {
+        leftSideController = storyboard.instantiateViewControllerWithIdentifier(leftSideControllerIdentifier!) as? UIViewController;
+    }
+    
+    if rightSideControllerIdentifier != nil {
+        rightSideController = storyboard.instantiateViewControllerWithIdentifier(rightSideControllerIdentifier!) as? UIViewController;
+    }
+    
+    let drawerController = DrawerController(centerViewController: centerController, leftDrawerViewController: leftSideController, rightDrawerViewController: rightSideController)
+    drawerController.showsShadows = false
+    
+    drawerController.restorationIdentifier = "Drawer"
+    drawerController.maximumRightDrawerWidth = 200.0
+    drawerController.openDrawerGestureModeMask = .All
+    drawerController.closeDrawerGestureModeMask = .All
+    
+    window.rootViewController = drawerController
+    
+    return drawerController
+    
+}
+

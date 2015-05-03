@@ -13,10 +13,6 @@
 		213EC4131A9903E900A972A6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC4121A9903E900A972A6 /* BaseViewController.swift */; };
 		213EC4161A9941DA00A972A6 /* AppSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC4151A9941DA00A972A6 /* AppSettingsManager.swift */; };
 		213EC41B1A99478E00A972A6 /* AppSettingsDefault.plist in Resources */ = {isa = PBXBuildFile; fileRef = 213EC41A1A99478E00A972A6 /* AppSettingsDefault.plist */; };
-		213EC4231A994D7A00A972A6 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC41E1A994D7A00A972A6 /* CenterViewController.swift */; };
-		213EC4241A994D7A00A972A6 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC41F1A994D7A00A972A6 /* ContainerViewController.swift */; };
-		213EC4251A994D7A00A972A6 /* HamburgerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC4201A994D7A00A972A6 /* HamburgerButton.swift */; };
-		213EC4261A994D7A00A972A6 /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC4211A994D7A00A972A6 /* SidePanelViewController.swift */; };
 		213EC4291A99E22E00A972A6 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC4281A99E22E00A972A6 /* APIManager.swift */; };
 		213EC4301A9E440600A972A6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC42F1A9E440600A972A6 /* LoadingView.swift */; };
 		213EC4321A9E444A00A972A6 /* Loading.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213EC4311A9E444A00A972A6 /* Loading.xcassets */; };
@@ -58,10 +54,6 @@
 		213EC4121A9903E900A972A6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		213EC4151A9941DA00A972A6 /* AppSettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettingsManager.swift; sourceTree = "<group>"; };
 		213EC41A1A99478E00A972A6 /* AppSettingsDefault.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppSettingsDefault.plist; sourceTree = "<group>"; };
-		213EC41E1A994D7A00A972A6 /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
-		213EC41F1A994D7A00A972A6 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
-		213EC4201A994D7A00A972A6 /* HamburgerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerButton.swift; sourceTree = "<group>"; };
-		213EC4211A994D7A00A972A6 /* SidePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelViewController.swift; sourceTree = "<group>"; };
 		213EC4281A99E22E00A972A6 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		213EC42F1A9E440600A972A6 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		213EC4311A9E444A00A972A6 /* Loading.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Loading.xcassets; sourceTree = "<group>"; };
@@ -94,7 +86,7 @@
 		218669291AE6DF39003F7746 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
 		218B33FD1AF69BC40053EBC9 /* AnimatedMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedMenuButton.swift; sourceTree = "<group>"; };
 		218B33FE1AF69BC40053EBC9 /* DrawerBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerBarButtonItem.swift; sourceTree = "<group>"; };
-		218B33FF1AF69BC40053EBC9 /* DrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerController.swift; sourceTree = "<group>"; };
+		218B33FF1AF69BC40053EBC9 /* DrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		218B34001AF69BC40053EBC9 /* DrawerVisualState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerVisualState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,17 +136,6 @@
 			name = AppSettings;
 			sourceTree = "<group>";
 		};
-		213EC41C1A994D7A00A972A6 /* SlideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				213EC41E1A994D7A00A972A6 /* CenterViewController.swift */,
-				213EC41F1A994D7A00A972A6 /* ContainerViewController.swift */,
-				213EC4201A994D7A00A972A6 /* HamburgerButton.swift */,
-				213EC4211A994D7A00A972A6 /* SidePanelViewController.swift */,
-			);
-			path = SlideMenu;
-			sourceTree = "<group>";
-		};
 		213EC4271A99E21900A972A6 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,7 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				213EC4271A99E21900A972A6 /* APIManager */,
-				213EC41C1A994D7A00A972A6 /* SlideMenu */,
 				213EC4111A9903C600A972A6 /* ViewControllers */,
 				217455CC1A98B17A00A538F0 /* Libs */,
 				217455CA1A98AF9B00A538F0 /* Views */,
@@ -372,10 +352,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				217455C41A98AC0A00A538F0 /* PercentView.swift in Sources */,
-				213EC4231A994D7A00A972A6 /* CenterViewController.swift in Sources */,
 				217455C91A98AC6200A538F0 /* UIImageExtensions.swift in Sources */,
 				213EC4291A99E22E00A972A6 /* APIManager.swift in Sources */,
-				213EC4251A994D7A00A972A6 /* HamburgerButton.swift in Sources */,
 				213EC4301A9E440600A972A6 /* LoadingView.swift in Sources */,
 				218B34041AF69BC40053EBC9 /* DrawerVisualState.swift in Sources */,
 				2186691A1AE6DC6C003F7746 /* ProgressHUD.m in Sources */,
@@ -384,13 +362,11 @@
 				217455BF1A98AC0A00A538F0 /* UITextFieldExtensions.swift in Sources */,
 				213EC4131A9903E900A972A6 /* BaseViewController.swift in Sources */,
 				218B34011AF69BC40053EBC9 /* AnimatedMenuButton.swift in Sources */,
-				213EC4261A994D7A00A972A6 /* SidePanelViewController.swift in Sources */,
 				217455C31A98AC0A00A538F0 /* ArrayExtensions.swift in Sources */,
 				217455BE1A98AC0A00A538F0 /* NSDateExtension.swift in Sources */,
 				2186692D1AE6DF39003F7746 /* NSArray+PureLayout.m in Sources */,
 				2186692F1AE6DF39003F7746 /* NSLayoutConstraint+PureLayout.m in Sources */,
 				2174556B1A97E3DE00A538F0 /* NumbersExtension.swift in Sources */,
-				213EC4241A994D7A00A972A6 /* ContainerViewController.swift in Sources */,
 				217455C51A98AC0A00A538F0 /* UIButtonExtensions.swift in Sources */,
 				21857C001AA13E7000C186D0 /* BaseWebViewController.swift in Sources */,
 				218B34021AF69BC40053EBC9 /* DrawerBarButtonItem.swift in Sources */,
