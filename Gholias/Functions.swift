@@ -78,7 +78,7 @@ public func SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(version: NSString) -> Bool {
         options: NSStringCompareOptions.NumericSearch) != NSComparisonResult.OrderedDescending
 }
 
-//MARK: - AppDelegate and DrawerMenu
+//MARK: - DrawerMenu
 public func initDrawerController(#window: UIWindow, #storyboardName: String, #centerControllerIdentifier: String, #leftSideControllerIdentifier: String?, #rightSideControllerIdentifier: String?) -> DrawerController {
     
     
@@ -97,6 +97,11 @@ public func initDrawerController(#window: UIWindow, #storyboardName: String, #ce
     if rightSideControllerIdentifier != nil {
         rightSideController = storyboard.instantiateViewControllerWithIdentifier(rightSideControllerIdentifier!) as? UIViewController;
     }
+    
+    return initDrawerController(window: window, centerController: centerController, leftSideController: leftSideController, rightSideController: rightSideController)
+}
+
+public func initDrawerController(#window: UIWindow, #centerController: UIViewController, #leftSideController: UIViewController?, #rightSideController: UIViewController?) -> DrawerController {
     
     let drawerController = DrawerController(centerViewController: centerController, leftDrawerViewController: leftSideController, rightDrawerViewController: rightSideController)
     drawerController.showsShadows = false
