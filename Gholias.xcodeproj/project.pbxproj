@@ -251,7 +251,7 @@
 				218669171AE6DC6C003F7746 /* ProgressHUD.m */,
 			);
 			name = ProgressHUD;
-			path = ProgressHUD/ProgressHUD/ProgressHUD;
+			path = Gholias/ProgressHUD;
 			sourceTree = SOURCE_ROOT;
 		};
 		218669201AE6DF39003F7746 /* PureLayout */ = {
