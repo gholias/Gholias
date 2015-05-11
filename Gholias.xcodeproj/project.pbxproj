@@ -16,6 +16,10 @@
 		213EC4291A99E22E00A972A6 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC4281A99E22E00A972A6 /* APIManager.swift */; };
 		213EC4301A9E440600A972A6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213EC42F1A9E440600A972A6 /* LoadingView.swift */; };
 		213EC4321A9E444A00A972A6 /* Loading.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 213EC4311A9E444A00A972A6 /* Loading.xcassets */; };
+		214D995C1AFE31CA0072FD3E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214D995B1AFE31CA0072FD3E /* NetworkManager.swift */; };
+		214D99601AFE329B0072FD3E /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 214D995E1AFE329B0072FD3E /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		214D99611AFE329B0072FD3E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 214D995F1AFE329B0072FD3E /* Reachability.m */; };
+		214D996A1AFEE2950072FD3E /* BaseSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214D99691AFEE2950072FD3E /* BaseSearchTableViewController.swift */; };
 		217455541A97E38C00A538F0 /* Gholias.h in Headers */ = {isa = PBXBuildFile; fileRef = 217455531A97E38C00A538F0 /* Gholias.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2174556B1A97E3DE00A538F0 /* NumbersExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2174556A1A97E3DE00A538F0 /* NumbersExtension.swift */; };
 		217455BE1A98AC0A00A538F0 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217455B61A98AC0A00A538F0 /* NSDateExtension.swift */; };
@@ -57,6 +61,10 @@
 		213EC4281A99E22E00A972A6 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		213EC42F1A9E440600A972A6 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		213EC4311A9E444A00A972A6 /* Loading.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Loading.xcassets; sourceTree = "<group>"; };
+		214D995B1AFE31CA0072FD3E /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		214D995E1AFE329B0072FD3E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		214D995F1AFE329B0072FD3E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		214D99691AFEE2950072FD3E /* BaseSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSearchTableViewController.swift; sourceTree = "<group>"; };
 		2174554E1A97E38C00A538F0 /* Gholias.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gholias.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		217455521A97E38C00A538F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		217455531A97E38C00A538F0 /* Gholias.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gholias.h; sourceTree = "<group>"; };
@@ -123,6 +131,7 @@
 			children = (
 				213EC4121A9903E900A972A6 /* BaseViewController.swift */,
 				21857BFF1AA13E7000C186D0 /* BaseWebViewController.swift */,
+				214D99691AFEE2950072FD3E /* BaseSearchTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -139,9 +148,20 @@
 		213EC4271A99E21900A972A6 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
+				214D995D1AFE329B0072FD3E /* Reachability */,
+				214D995B1AFE31CA0072FD3E /* NetworkManager.swift */,
 				213EC4281A99E22E00A972A6 /* APIManager.swift */,
 			);
 			name = APIManager;
+			sourceTree = "<group>";
+		};
+		214D995D1AFE329B0072FD3E /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				214D995E1AFE329B0072FD3E /* Reachability.h */,
+				214D995F1AFE329B0072FD3E /* Reachability.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 		217455441A97E38C00A538F0 = {
@@ -270,6 +290,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				214D99601AFE329B0072FD3E /* Reachability.h in Headers */,
 				217455541A97E38C00A538F0 /* Gholias.h in Headers */,
 				218669321AE6DF39003F7746 /* PureLayoutDefines.h in Headers */,
 				218669301AE6DF39003F7746 /* PureLayout+Internal.h in Headers */,
@@ -351,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				214D995C1AFE31CA0072FD3E /* NetworkManager.swift in Sources */,
 				217455C41A98AC0A00A538F0 /* PercentView.swift in Sources */,
 				217455C91A98AC6200A538F0 /* UIImageExtensions.swift in Sources */,
 				213EC4291A99E22E00A972A6 /* APIManager.swift in Sources */,
@@ -360,6 +382,7 @@
 				213EC4101A98FFE600A972A6 /* SCLAlertView.swift in Sources */,
 				217455C01A98AC0A00A538F0 /* Macros.swift in Sources */,
 				217455BF1A98AC0A00A538F0 /* UITextFieldExtensions.swift in Sources */,
+				214D99611AFE329B0072FD3E /* Reachability.m in Sources */,
 				213EC4131A9903E900A972A6 /* BaseViewController.swift in Sources */,
 				218B34011AF69BC40053EBC9 /* AnimatedMenuButton.swift in Sources */,
 				217455C31A98AC0A00A538F0 /* ArrayExtensions.swift in Sources */,
@@ -369,6 +392,7 @@
 				2174556B1A97E3DE00A538F0 /* NumbersExtension.swift in Sources */,
 				217455C51A98AC0A00A538F0 /* UIButtonExtensions.swift in Sources */,
 				21857C001AA13E7000C186D0 /* BaseWebViewController.swift in Sources */,
+				214D996A1AFEE2950072FD3E /* BaseSearchTableViewController.swift in Sources */,
 				218B34021AF69BC40053EBC9 /* DrawerBarButtonItem.swift in Sources */,
 				213EC40D1A98FE7700A972A6 /* Async.swift in Sources */,
 				2186692B1AE6DF39003F7746 /* ALView+PureLayout.m in Sources */,

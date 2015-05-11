@@ -79,7 +79,7 @@ public func SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(version: NSString) -> Bool {
 }
 
 //MARK: - DrawerMenu
-public func initDrawerController(#window: UIWindow, #storyboardName: String, #centerControllerIdentifier: String, #leftSideControllerIdentifier: String?, #rightSideControllerIdentifier: String?) -> DrawerController {
+public func initDrawerController(#storyboardName: String, #centerControllerIdentifier: String, #leftSideControllerIdentifier: String?, #rightSideControllerIdentifier: String?) -> DrawerController {
     
     
     let storyboard = UIStoryboard(name: storyboardName, bundle: nil);
@@ -98,10 +98,10 @@ public func initDrawerController(#window: UIWindow, #storyboardName: String, #ce
         rightSideController = storyboard.instantiateViewControllerWithIdentifier(rightSideControllerIdentifier!) as? UIViewController;
     }
     
-    return initDrawerController(window: window, centerController: centerController, leftSideController: leftSideController, rightSideController: rightSideController)
+    return initDrawerController(centerController: centerController, leftSideController: leftSideController, rightSideController: rightSideController)
 }
 
-public func initDrawerController(#window: UIWindow, #centerController: UIViewController, #leftSideController: UIViewController?, #rightSideController: UIViewController?) -> DrawerController {
+public func initDrawerController(#centerController: UIViewController, #leftSideController: UIViewController?, #rightSideController: UIViewController?) -> DrawerController {
     
     let drawerController = DrawerController(centerViewController: centerController, leftDrawerViewController: leftSideController, rightDrawerViewController: rightSideController)
     drawerController.showsShadows = false
@@ -110,8 +110,6 @@ public func initDrawerController(#window: UIWindow, #centerController: UIViewCon
     drawerController.maximumRightDrawerWidth = 200.0
     drawerController.openDrawerGestureModeMask = .All
     drawerController.closeDrawerGestureModeMask = .All
-    
-    window.rootViewController = drawerController
     
     return drawerController
     
