@@ -111,9 +111,9 @@ public extension UIViewController {
         self.view.endEditing(true)
     }
     
-    public func heightForText(text:String, font:UIFont ) -> CGFloat {
+    public func heightForText(text:String, font:UIFont, width:CGFloat ) -> CGFloat {
         var attributes: NSDictionary = NSDictionary(objectsAndKeys: font, NSFontAttributeName)
-        var titleRect = text.boundingRectWithSize(CGSizeMake(self.view.frame.size.width - 30, 1128), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: attributes as [NSObject : AnyObject], context: nil)
+        var titleRect = text.boundingRectWithSize(CGSizeMake(width, 1128), options: NSStringDrawingOptions.UsesLineFragmentOrigin, attributes: attributes as [NSObject : AnyObject], context: nil)
         return titleRect.height
     }
     
