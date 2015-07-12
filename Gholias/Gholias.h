@@ -12,6 +12,7 @@
 
 #import "ProgressHUD.h"
 #import "PureLayout.h"
+#import "PureLayout+Internal.h"
 #import "Reachability.h"
 
 //! Project version number for Gholias.
